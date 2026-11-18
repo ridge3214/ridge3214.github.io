@@ -1,0 +1,983 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>黑料社大赛-赛程阵容与观赛指南</title>
+<meta name="description" content="黑料社大赛2026冬季赛11月8日进入决赛周，整理赛程对阵、选手名单、评审规则与赛后复盘。涵盖报名门槛、投票机制、争议回应和观赛注意事项，供参赛者与观众核对具体信息。">
+<meta name="keywords" content="黑料社大赛">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231b1f2a'/%3E%3Cpath d='M18 44V20h9c7 0 11 4 11 10 0 4-2 7-6 9l8 5h-9l-8-6v6z' fill='%23e8b059'/%3E%3C/svg%3E">
+<style>
+:root{
+  --ink:#1b1f2a;
+  --ink-2:#3a4150;
+  --muted:#6b7385;
+  --line:#dfe2e9;
+  --line-2:#eceef3;
+  --bg:#f6f7fa;
+  --paper:#ffffff;
+  --brand:#c8442b;
+  --brand-2:#8f2d1c;
+  --gold:#e8b059;
+  --teal:#2f6f6b;
+  --blue:#2b5f8f;
+  --radius:12px;
+  --radius-sm:8px;
+  --shadow:0 1px 2px rgba(27,31,42,.06),0 8px 24px rgba(27,31,42,.06);
+  --shadow-sm:0 1px 2px rgba(27,31,42,.08);
+  --gap:22px;
+  --fs-h1:34px;
+  --fs-h2:23px;
+  --fs-h3:17px;
+  --fs-body:15.5px;
+  --lh:1.78;
+  --ann-h:38px;
+  --head-h:64px;
+  --sticky-sum:calc(var(--ann-h) + var(--head-h));
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  font-size:var(--fs-body);line-height:var(--lh);
+}
+img{max-width:100%;display:block}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible{
+  outline:3px solid var(--blue);outline-offset:2px;border-radius:4px;
+}
+h1,h2,h3,h4{margin:0;line-height:1.32;font-weight:800}
+p{margin:0 0 12px}
+ul,ol{margin:0 0 12px;padding-left:1.2em}
+li{margin:4px 0}
+section[id],div[id]{scroll-margin-top:calc(var(--sticky-sum) + 12px)}
+
+/* ===== 公告条 ===== */
+.announce{
+  position:sticky;top:0;z-index:60;
+  height:var(--ann-h);display:flex;align-items:center;
+  background:linear-gradient(90deg,#1b1f2a,#2c2436 60%,#3a2a22);
+  color:#f3e7d5;font-size:13.5px;
+}
+.announce .wrap{display:flex;align-items:center;gap:14px;width:100%;overflow:hidden}
+.announce .tag{
+  flex:none;background:var(--brand);color:#fff;font-weight:700;
+  padding:1px 8px;border-radius:4px;font-size:12px;letter-spacing:.5px;
+}
+.announce .txt{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.announce .txt a{color:#ffd9a8}
+
+/* ===== 页头 ===== */
+.head{
+  position:sticky;top:var(--ann-h);z-index:55;
+  background:rgba(255,255,255,.94);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.head .wrap{display:flex;align-items:center;gap:18px;min-height:var(--head-h)}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand svg{width:34px;height:34px;flex:none}
+.brand .name{font-size:19px;font-weight:900;letter-spacing:.3px;color:var(--ink)}
+.nav{display:flex;gap:2px;flex-wrap:nowrap;overflow:hidden;flex:1 1 auto}
+.nav a{
+  color:var(--ink-2);font-size:14px;font-weight:600;padding:7px 10px;border-radius:6px;
+  white-space:nowrap;
+}
+.nav a:hover{background:var(--line-2);text-decoration:none;color:var(--brand-2)}
+.head-actions{display:flex;align-items:center;gap:10px;margin-left:auto}
+.search{
+  display:flex;align-items:center;border:1px solid var(--line);border-radius:999px;
+  background:var(--bg);padding:2px 4px 2px 12px;gap:6px;
+}
+.search input{
+  border:0;background:transparent;font:inherit;font-size:13.5px;width:132px;padding:5px 0;color:var(--ink);
+}
+.search input:focus{outline:none}
+.search button{
+  border:0;background:var(--ink);color:#fff;font:inherit;font-size:13px;font-weight:700;
+  padding:6px 12px;border-radius:999px;cursor:pointer;
+}
+.btn-primary{
+  display:inline-block;background:var(--brand);color:#fff;font-weight:700;
+  padding:9px 18px;border-radius:999px;font-size:14px;border:1px solid var(--brand);
+}
+.btn-primary:hover{background:var(--brand-2);text-decoration:none;color:#fff}
+.menu-btn{
+  display:none;border:1px solid var(--line);background:#fff;border-radius:8px;
+  padding:7px 10px;font:inherit;font-size:13.5px;font-weight:700;cursor:pointer;color:var(--ink);
+}
+.mobile-nav{display:none;border-top:1px solid var(--line-2);background:#fff;padding:10px 0 14px}
+.mobile-nav a{display:block;padding:9px 20px;color:var(--ink-2);font-weight:600;font-size:14.5px}
+.mobile-nav.open{display:block}
+.search-feedback{font-size:13px;color:var(--muted);padding:0 2px}
+
+/* ===== 布局 ===== */
+.wrap{width:min(1180px,calc(100% - 40px));margin:0 auto}
+.layout{display:grid;grid-template-columns:minmax(0,1fr) 312px;gap:var(--gap);align-items:start;margin:var(--gap) auto 56px}
+main{min-width:0}
+.panel{
+  background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);
+  padding:24px 26px;margin-bottom:var(--gap);box-shadow:var(--shadow-sm);
+}
+.panel h2{font-size:var(--fs-h2);margin-bottom:6px}
+.panel .sub{color:var(--muted);font-size:13.5px;margin-bottom:16px}
+h3{font-size:var(--fs-h3);margin:18px 0 8px}
+.kicker{font-size:12px;font-weight:800;color:var(--brand);letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}
+
+/* ===== 首屏 ===== */
+.hero{
+  background:radial-gradient(1200px 400px at 88% -10%,rgba(232,176,89,.22),transparent 60%),
+             linear-gradient(160deg,#20242f 0%,#2a2333 55%,#3a2a22 100%);
+  color:#f5efe6;border-radius:var(--radius);overflow:hidden;position:relative;
+  margin-bottom:var(--gap);box-shadow:var(--shadow);
+}
+.hero-inner{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:20px;padding:38px 36px 30px;align-items:center}
+.hero .badge{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;
+  border:1px solid rgba(232,176,89,.55);color:var(--gold);padding:4px 12px;border-radius:999px;margin-bottom:14px;
+}
+.hero h1{font-size:var(--fs-h1);color:#fff;letter-spacing:.5px}
+.hero .lede{margin:12px 0 20px;color:#d8d2c8;font-size:16px;max-width:56ch}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.hero .cta .ghost{
+  color:#f0e6d8;border:1px solid rgba(255,255,255,.35);padding:9px 18px;border-radius:999px;
+  font-weight:700;font-size:14px;
+}
+.hero .cta .ghost:hover{background:rgba(255,255,255,.1);text-decoration:none}
+.hero-stats{display:flex;gap:26px;margin-top:22px;flex-wrap:wrap}
+.hero-stats div{font-size:12.5px;color:#b9b2a7}
+.hero-stats strong{display:block;font-size:22px;color:var(--gold);font-weight:900;line-height:1.2}
+.hero-art{position:relative;min-height:230px;display:flex;align-items:center;justify-content:center}
+.hero-art svg{width:100%;max-width:330px;height:auto}
+
+/* ===== 卡片网格 ===== */
+.grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{
+  border:1px solid var(--line);border-radius:var(--radius-sm);background:#fff;
+  padding:16px 16px 14px;display:flex;flex-direction:column;gap:6px;
+  transition:transform .18s ease,box-shadow .18s ease;
+}
+.card:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.card .meta{font-size:12.5px;color:var(--muted);display:flex;gap:8px;flex-wrap:wrap}
+.card h3{margin:0;font-size:16px}
+.card p{margin:0;font-size:14px;color:var(--ink-2)}
+.card .tags{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto;padding-top:8px}
+.tag-pill{
+  display:inline-block;font-size:12px;font-weight:600;color:var(--ink-2);
+  background:var(--line-2);padding:2px 9px;border-radius:999px;
+}
+.tag-pill.hot{background:#fbe7e2;color:var(--brand-2)}
+.tag-pill.cool{background:#e4efee;color:var(--teal)}
+.tag-pill.blue{background:#e6eef6;color:var(--blue)}
+
+/* ===== 紧凑列表 ===== */
+.tight{list-style:none;padding:0;margin:0}
+.tight li{
+  display:grid;grid-template-columns:64px minmax(0,1fr) auto;gap:12px;align-items:baseline;
+  padding:11px 0;border-bottom:1px dashed var(--line);
+}
+.tight li:last-child{border-bottom:0}
+.tight .date{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.tight .t{font-weight:700;font-size:14.5px;color:var(--ink)}
+.tight .d{font-size:13px;color:var(--muted);margin-top:2px}
+.tight .flag{font-size:12px;font-weight:700;color:var(--brand-2);background:#fbe7e2;padding:1px 8px;border-radius:999px;white-space:nowrap}
+
+/* ===== 频道索引 ===== */
+.channels{display:flex;flex-wrap:wrap;gap:9px}
+.channels a{
+  border:1px solid var(--line);border-radius:999px;padding:7px 14px;
+  font-size:13.5px;font-weight:600;color:var(--ink-2);background:#fff;
+}
+.channels a:hover{border-color:var(--brand);color:var(--brand-2);text-decoration:none;background:#fdf3f1}
+.channels a .n{color:var(--muted);font-weight:500;font-size:12px;margin-left:4px}
+
+/* ===== 深度解析 ===== */
+.read-panel{background:#fffdf9;border-color:#efe2cf}
+.read-panel h2{color:var(--brand-2)}
+.read-body{columns:1;max-width:70ch}
+.read-body h3{margin-top:22px;padding-left:12px;border-left:4px solid var(--gold)}
+.read-body p{font-size:15.5px}
+.quote{
+  background:#fff6e8;border-left:4px solid var(--gold);padding:12px 16px;border-radius:0 8px 8px 0;
+  font-size:14.5px;color:var(--ink-2);margin:14px 0;
+}
+.quote cite{display:block;font-size:12.5px;color:var(--muted);font-style:normal;margin-top:6px}
+.verify{
+  width:100%;border-collapse:collapse;font-size:13.8px;margin:12px 0 16px;
+}
+.verify caption{text-align:left;font-size:12.5px;color:var(--muted);padding-bottom:6px}
+.verify th,.verify td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;text-align:left}
+.verify th{background:var(--bg);font-weight:700;white-space:nowrap}
+.verify td.num{font-variant-numeric:tabular-nums}
+
+/* ===== 步骤 ===== */
+.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.steps li{
+  position:relative;padding:12px 16px 12px 52px;border:1px solid var(--line);
+  border-radius:var(--radius-sm);background:#fff;font-size:14.2px;
+}
+.steps li::before{
+  counter-increment:s;content:counter(s);
+  position:absolute;left:14px;top:12px;width:24px;height:24px;border-radius:50%;
+  background:var(--ink);color:#fff;font-size:12.5px;font-weight:800;
+  display:flex;align-items:center;justify-content:center;
+}
+
+/* ===== 对照面板 ===== */
+.compare{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:var(--radius-sm);overflow:hidden}
+.compare > div{padding:16px}
+.compare .c-a{background:#fff}
+.compare .c-b{background:#fdf3f1;border-left:1px solid var(--line)}
+.compare h4{font-size:14.5px;margin:0 0 8px;color:var(--brand-2)}
+.compare ul{margin:0;padding-left:1.1em;font-size:13.8px}
+
+/* ===== 榜单 ===== */
+.rank{list-style:none;padding:0;margin:0;counter-reset:r}
+.rank li{
+  display:grid;grid-template-columns:34px minmax(0,1fr) auto;gap:10px;align-items:center;
+  padding:10px 0;border-bottom:1px solid var(--line-2);
+}
+.rank li:last-child{border-bottom:0}
+.rank .no{
+  counter-increment:r;font-weight:900;font-size:15px;color:var(--muted);
+  font-variant-numeric:tabular-nums;
+}
+.rank .no::before{content:counter(r)}
+.rank li:nth-child(-n+3) .no{color:var(--brand)}
+.rank .name{font-weight:700;font-size:14.5px}
+.rank .why{font-size:13px;color:var(--muted)}
+.rank .score{font-size:13px;font-weight:800;color:var(--teal);font-variant-numeric:tabular-nums}
+
+/* ===== FAQ ===== */
+details{background:#fff;border:1px solid var(--line);border-radius:var(--radius-sm);margin-bottom:10px}
+details[open]{border-color:#e3c6b7;background:#fffdfb}
+summary{
+  cursor:pointer;padding:13px 16px;font-weight:700;font-size:14.6px;list-style:none;
+  display:flex;gap:10px;align-items:flex-start;
+}
+summary::-webkit-details-marker{display:none}
+summary::before{content:"问答";font-size:11px;font-weight:800;color:var(--brand);flex:none;padding-top:2px}
+details .ans{padding:0 16px 15px 16px;font-size:14.2px;color:var(--ink-2)}
+
+/* ===== 评论 ===== */
+.comments{display:grid;gap:12px}
+.comment{
+  display:grid;grid-template-columns:38px minmax(0,1fr);gap:12px;
+  padding:13px 0;border-bottom:1px dashed var(--line);
+}
+.comment:last-child{border-bottom:0}
+.avatar{
+  width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;
+  font-weight:800;font-size:14px;color:#fff;background:var(--ink);flex:none;
+}
+.avatar.a2{background:var(--teal)}
+.avatar.a3{background:var(--brand)}
+.avatar.a4{background:var(--blue)}
+.avatar.a5{background:#6a5a8a}
+.comment .who{font-size:13px;color:var(--muted);margin-bottom:3px}
+.comment .who b{color:var(--ink);font-size:13.5px}
+.comment .body{font-size:14.2px;color:var(--ink-2)}
+
+/* ===== 侧栏 ===== */
+.side{display:grid;gap:var(--gap);position:sticky;top:calc(var(--sticky-sum) + 16px)}
+.side .panel{margin-bottom:0;padding:18px 18px}
+.side h2{font-size:16.5px;margin-bottom:10px}
+.toc{list-style:none;padding:0;margin:0;font-size:13.8px}
+.toc a{display:block;padding:6px 10px;border-radius:6px;color:var(--ink-2);border-left:3px solid transparent}
+.toc a:hover{background:var(--line-2);text-decoration:none}
+.toc a.active{background:#fdf3f1;color:var(--brand-2);font-weight:700;border-left-color:var(--brand)}
+.side-list{list-style:none;padding:0;margin:0;font-size:13.8px}
+.side-list li{padding:8px 0;border-bottom:1px dashed var(--line-2);display:flex;gap:8px;justify-content:space-between}
+.side-list li:last-child{border-bottom:0}
+.side-list .v{color:var(--muted);font-size:12.5px;white-space:nowrap}
+.side p{font-size:13.4px;color:var(--muted);margin:0 0 8px}
+
+/* ===== 页脚 ===== */
+footer{background:#1b1f2a;color:#c8cbd4;padding:44px 0 26px;margin-top:8px}
+.foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:26px}
+footer .brand .name{color:#fff}
+footer .flede{font-size:13.8px;color:#9aa0ad;margin:10px 0 0;max-width:34ch}
+footer h4{color:#fff;font-size:13.5px;margin:0 0 10px;letter-spacing:.5px}
+footer ul{list-style:none;padding:0;margin:0;font-size:13.5px}
+footer li{margin:7px 0}
+footer a{color:#c8cbd4}
+footer a:hover{color:#fff}
+.foot-note{
+  border-top:1px solid #31363f;margin-top:28px;padding-top:16px;
+  font-size:12.5px;color:#8b919d;display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between;
+}
+
+/* 回到顶部 */
+#toTop{
+  position:fixed;right:18px;bottom:18px;z-index:70;display:none;
+  background:var(--ink);color:#fff;border:0;border-radius:999px;
+  padding:10px 16px;font:inherit;font-size:13.5px;font-weight:700;cursor:pointer;
+  box-shadow:var(--shadow);
+}
+#toTop.show{display:block}
+
+/* 响应式 */
+@media (max-width:1020px){
+  .layout{grid-template-columns:minmax(0,1fr) 272px}
+  .nav a{padding:7px 8px;font-size:13.5px}
+  .search input{width:104px}
+}
+@media (max-width:880px){
+  .layout{grid-template-columns:minmax(0,1fr)}
+  .side{position:static;order:2}
+  .grid-3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hero-inner{grid-template-columns:1fr;padding:30px 24px}
+  .hero-art{min-height:0;order:-1;max-width:260px;margin:0 auto}
+  .nav{display:none}
+  .menu-btn{display:inline-block}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .search{display:none}
+  :root{--fs-h1:28px;--fs-h2:21px}
+}
+@media (max-width:560px){
+  .wrap{width:calc(100% - 28px)}
+  .grid-3,.grid-2{grid-template-columns:1fr}
+  .compare{grid-template-columns:1fr}
+  .compare .c-b{border-left:0;border-top:1px solid var(--line)}
+  .panel{padding:18px 16px}
+  .tight li{grid-template-columns:56px minmax(0,1fr);gap:8px}
+  .tight .flag{grid-column:2;justify-self:start}
+  :root{--fs-h1:25px;--fs-body:15px;--gap:16px;--ann-h:34px;--head-h:58px}
+  .hero-stats{gap:18px}
+  .brand .name{font-size:17px}
+  #toTop{bottom:12px;right:12px;padding:9px 13px}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *{transition:none!important;animation:none!important}
+  .card:hover{transform:none}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<!-- 公告条 -->
+<div class="announce" id="announce">
+  <div class="wrap">
+    <span class="tag">赛程</span>
+    <span class="txt">11月8日 决赛轮对阵公布：12号「纸鸢」对 27号「断桥」；评审打分表已于11月6日 21:40 在选手群公开 · <a href="/#latest">查看全部更新</a></span>
+  </div>
+</div>
+
+<!-- 页头 -->
+<header class="head">
+  <div class="wrap">
+    <a class="brand" href="/#top" aria-label="黑料社大赛首页">
+      <svg viewBox="0 0 64 64" role="img" aria-label="黑料社大赛标志">
+        <rect width="64" height="64" rx="14" fill="#1b1f2a"/>
+        <path d="M14 46V18h10c7.5 0 12 4.6 12 11.2 0 4.2-2 7.4-6 9l9 7.8h-10l-8-7.4V46z" fill="#e8b059"/>
+        <circle cx="47" cy="24" r="6" fill="#c8442b"/>
+        <path d="M43 40h9v8h-9z" fill="#f5efe6"/>
+      </svg>
+      <span class="name">黑料社大赛</span>
+    </a>
+    <nav class="nav" aria-label="主题导航">
+      <a href="/#overview">赛事概览</a>
+      <a href="/#picks">精选推荐</a>
+      <a href="/#latest">最新更新</a>
+      <a href="/#channels">分类入口</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">体验指南</a>
+      <a href="/#faq">常见问题</a>
+      <a href="/#comments">观众评论</a>
+    </nav>
+    <div class="head-actions">
+      <div class="search">
+        <input type="search" id="siteSearch" placeholder="搜选手 / 赛制 / 争议" aria-label="站内搜索">
+        <button type="button" id="searchBtn">查找</button>
+      </div>
+      <a class="btn-primary" href="/#guide">观赛须知</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mobileNav">菜单</button>
+    </div>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="/#overview">赛事概览</a>
+    <a href="/#picks">精选推荐</a>
+    <a href="/#latest">最新更新</a>
+    <a href="/#channels">分类入口</a>
+    <a href="/#deep">深度解析</a>
+    <a href="/#guide">体验指南</a>
+    <a href="/#faq">常见问题</a>
+    <a href="/#comments">观众评论</a>
+    <a href="/#recommend">相关推荐</a>
+  </div>
+</header>
+
+<div class="wrap" id="top">
+
+  <!-- 首屏 -->
+  <div class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="badge">2026 冬季赛 · 第 6 季 · 决赛周</div>
+        <h1>黑料社大赛</h1>
+        <p class="lede">
+          一档以「公开材料＋现场质证」为核心的民间赛事：选手在限时内整理网络流传的说法，交给评审与观众共同校验。第 6 季自 10 月 19 日开赛，报名 312 人，进入正赛 48 人，11 月 8 日晚 20:00 进行决赛轮。
+        </p>
+        <div class="cta">
+          <a class="btn-primary" href="/#latest">看 11 月 8 日更新</a>
+          <a class="ghost" href="/#deep">读赛制解析</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>48</strong>正赛选手</div>
+          <div><strong>6</strong>轮赛制</div>
+          <div><strong>9</strong>名评审</div>
+          <div><strong>17,400</strong>观赛登记</div>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 320 260" role="img" aria-label="赛事结构示意图">
+          <defs>
+            <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#e8b059" stop-opacity=".95"/>
+              <stop offset="1" stop-color="#c8442b" stop-opacity=".9"/>
+            </linearGradient>
+          </defs>
+          <circle cx="160" cy="126" r="104" fill="none" stroke="#4a4152" stroke-width="1.5" stroke-dasharray="4 7"/>
+          <circle cx="160" cy="126" r="66" fill="none" stroke="#5c5060" stroke-width="1.5"/>
+          <path d="M160 22 L236 190 L84 190 Z" fill="none" stroke="url(#g1)" stroke-width="2.5"/>
+          <circle cx="160" cy="126" r="12" fill="#e8b059"/>
+          <circle cx="236" cy="190" r="8" fill="#c8442b"/>
+          <circle cx="84" cy="190" r="8" fill="#2f6f6b"/>
+          <circle cx="160" cy="22" r="7" fill="#f5efe6"/>
+          <rect x="26" y="206" width="268" height="1" fill="#4a4152"/>
+          <text x="160" y="238" text-anchor="middle" fill="#9b93a6" font-size="13" font-family="sans-serif">材料 → 质证 → 复核 · 三轮判定</text>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="layout">
+    <!-- 主内容 -->
+    <main>
+
+      <!-- 1 领域概览 -->
+      <section class="panel" id="overview">
+        <div class="kicker">领域概览</div>
+        <h2>赛事在比什么：六轮结构与被评估的四类材料</h2>
+        <p class="sub">规则版本 v6.2，2026 年 10 月 12 日由组委会公示，较上季新增「原始出处回溯」环节。</p>
+        <p>
+          冬季赛沿用「个人赛道 + 抽签对阵」的组织方式，六轮依次为：海选自证、双人交叉质证、旧案重查、限时反驳、观众质询、决赛合议。每轮给分上限 100，其中材料完整度 40 分、出处可回溯性 30 分、表达与回应 30 分。评审团 9 人，含 3 名媒体从业者、3 名资料检索者、2 名法务背景人士和 1 名往届冠军。
+        </p>
+        <p>
+          被评估的材料分四类：时间线类（事件发生顺序）、截图与录屏类、口述转述类、反驳材料类。组委会在 10 月 29 日发布的补充说明里明确，只有可回到原始发布页的截图才计满分，二次转存的图片按 60% 计分——这条规则在第 4 轮直接影响了 7 名选手的排名。
+        </p>
+        <div class="grid-2" style="margin-top:14px">
+          <div class="card">
+            <div class="meta"><span>规则文件</span><span>10月12日</span></div>
+            <h3>v6.2 赛制全文要点</h3>
+            <p>六轮权重、评分细项、申诉窗口 24 小时，以及评审回避条款：与选手同属一个社群的评审需在开赛前报备。</p>
+            <div class="tags"><span class="tag-pill">评分细则</span><span class="tag-pill cool">申诉窗口</span></div>
+          </div>
+          <div class="card">
+            <div class="meta"><span>评审结构</span><span>9 人</span></div>
+            <h3>评审团构成与回避名单</h3>
+            <p>3 名媒体从业者、3 名资料检索者、2 名法务背景、1 名 S5 冠军；已有 2 人因社群关联报备回避第 3 轮。</p>
+            <div class="tags"><span class="tag-pill blue">评审回避</span><span class="tag-pill">打分表</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2 精选内容推荐 -->
+      <section class="panel" id="picks">
+        <div class="kicker">精选内容推荐</div>
+        <h2>本周值得先看的五条内容</h2>
+        <p class="sub">按材料完整度、讨论量与复盘价值挑选，均标注首次公开时间。</p>
+        <div class="grid-3">
+          <div class="card">
+            <div class="meta"><span>11月6日</span><span>重查类</span></div>
+            <h3>「2023 年那段录音」重查记录</h3>
+            <p>选手 12 号纸鸢把 7 分 12 秒录音切成 4 段，逐段标注转述人，指出第 3 段被剪掉 22 秒。</p>
+            <div class="tags"><span class="tag-pill hot">原始出处回溯</span><span class="tag-pill">录音比对</span></div>
+          </div>
+          <div class="card">
+            <div class="meta"><span>11月5日</span><span>质证类</span></div>
+            <h3>断桥的截图时间戳自证</h3>
+            <p>27 号断桥提交了 41 张截图的设备时间与云端备份记录，其中 6 张时间对不上，被评审扣 9 分。</p>
+            <div class="tags"><span class="tag-pill">时间戳核验</span><span class="tag-pill cool">扣分记录</span></div>
+          </div>
+          <div class="card">
+            <div class="meta"><span>11月4日</span><span>规则类</span></div>
+            <h3>二次转存计 60% 的现场争议</h3>
+            <p>第 4 轮有选手引用论坛转载图，评审按转存折算，观众席提出异议，组委会当晚给了书面说明。</p>
+            <div class="tags"><span class="tag-pill">转存折算</span><span class="tag-pill blue">书面说明</span></div>
+          </div>
+          <div class="card">
+            <div class="meta"><span>11月3日</span><span>口述类</span></div>
+            <h3>三段口述转述的交叉比对</h3>
+            <p>三位当事人对同一次会面的描述在时间、地点、在场人数上各有出入，选手用表格列出 11 处不一致。</p>
+            <div class="tags"><span class="tag-pill">口述转述</span><span class="tag-pill">交叉比对</span></div>
+          </div>
+          <div class="card">
+            <div class="meta"><span>11月1日</span><span>复盘类</span></div>
+            <h3>海选被淘汰的 264 人常犯的错</h3>
+            <p>统计海选评分表：材料完整度平均 21 分，出处可回溯性平均 12 分，多数人只贴结论不贴原页。</p>
+            <div class="tags"><span class="tag-pill cool">海选数据</span><span class="tag-pill">评分表</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 3 最新更新 -->
+      <section class="panel" id="latest">
+        <div class="kicker">最新更新</div>
+        <h2>11 月 8 日前后发布的对阵与文件</h2>
+        <p class="sub">按发布时间倒序，右侧标记文件状态。</p>
+        <ul class="tight">
+          <li><span class="date">今天 09:20</span><span><a class="t" href="/#deep">决赛轮对阵抽签结果与先后手顺序</a><span class="d">12 号纸鸢先陈述，27 号断桥后反驳，各 18 分钟</span></span><span class="flag">已生效</span></li>
+          <li><span class="date">昨天 21:40</span><span><a class="t" href="/#deep">第 5 轮评审打分表公开（含 2 张扣分说明）</a><span class="d">9 名评审中 8 人提交，1 人回避未计分</span></span><span class="flag">可下载</span></li>
+          <li><span class="date">11月6日</span><span><a class="t" href="/#faq">观众质询环节提问规则修订</a><span class="d">每人限 1 问，40 字内，由主持人筛读</span></span><span class="flag">v6.2.1</span></li>
+          <li><span class="date">11月5日</span><span><a class="t" href="/#picks">断桥提交的 41 张截图核验记录</a><span class="d">6 张设备时间与云端备份不一致，扣 9 分</span></span><span class="flag">已归档</span></li>
+          <li><span class="date">11月4日</span><span><a class="t" href="/#picks">二次转存材料折算比例的书面说明</a><span class="d">明确 60% 折算适用于非原始发布页截图</span></span><span class="flag">已回应</span></li>
+          <li><span class="date">11月1日</span><span><a class="t" href="/#guide">决赛周观赛登记与入场时段</a><span class="d">线上登记 17,400 人，线下席位 220 个</span></span><span class="flag">进行中</span></li>
+          <li><span class="date">10月29日</span><span><a class="t" href="/#overview">v6.2 补充说明：出处回溯计分口径</a><span class="d">原始发布页截图满分，二次转存按比例计</span></span><span class="flag">已公示</span></li>
+        </ul>
+      </section>
+
+      <!-- 4 分类入口 -->
+      <section class="panel" id="channels">
+        <div class="kicker">分类入口</div>
+        <h2>按主题查：十条常见检索路径</h2>
+        <p class="sub">括号内为本季对应条目数量，数字统计截至 11 月 8 日 10:00。</p>
+        <div class="channels">
+          <a href="/#deep">赛制规则解读<span class="n">14</span></a>
+          <a href="/#latest">决赛对阵与赛程<span class="n">9</span></a>
+          <a href="/#picks">选手材料复盘<span class="n">23</span></a>
+          <a href="/#faq">评审打分标准<span class="n">11</span></a>
+          <a href="/#deep">原始出处回溯方法<span class="n">17</span></a>
+          <a href="/#picks">截图时间戳核验<span class="n">8</span></a>
+          <a href="/#comments">观众质询记录<span class="n">21</span></a>
+          <a href="/#faq">申诉流程与时限<span class="n">6</span></a>
+          <a href="/#overview">评审回避名单<span class="n">4</span></a>
+          <a href="/#guide">线下观赛入场须知<span class="n">7</span></a>
+        </div>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="panel read-panel" id="deep">
+        <div class="kicker">深度解析</div>
+        <h2>这季真正的分水岭：能不能把材料送回原始发布页</h2>
+        <p class="sub">以第 3 至第 5 轮的打分表为样本，涉及 36 名选手、324 项评分记录。</p>
+        <div class="read-body">
+          <p>
+            一个可以核对也可以反驳的判断：第 6 季选手之间的差距，主要不在「谁掌握的材料多」，而在「谁能把材料送回原始发布页」。把评审打分按细项拆开，材料完整度这一项 36 名选手的标准差只有 6.8 分，而出处可回溯性这一项标准差达到 14.2 分。换言之，大家交上来的东西数量差不多，能一路找回原页面的少数人拿走了主要分差。
+          </p>
+          <h3>案例时间线：12 号纸鸢的 22 秒</h3>
+          <p>
+            10 月 26 日第 3 轮，12 号纸鸢提交一段 7 分 12 秒录音，标注「2023 年 8 月 14 日，某论坛语音帖附件」。她没有直接使用转存的精简版，而是回到论坛存档页，找到 2023 年 8 月 14 日 23:07 的原始帖，再对照两位转述人在 2024 年 3 月的补充说明。比对结果是：通行版本在第 3 段剪掉 22 秒，剪掉的段落里有一句「这条我还没核实」。这句话改变了整段材料的性质，从「当事人确认」变成「当事人未确认」。
+          </p>
+          <p>
+            评审当晚给这段材料出处可回溯性 27/30，比同轮平均高 13 分。这个差距不是表达技巧带来的，是那 22 秒带来的。
+          </p>
+          <h3>说法差异：同一条材料的三种口径</h3>
+          <p>
+            27 号断桥在第 4 轮引用了同一事件的另一种材料——41 张聊天截图。他自己的说法是「全部来自原始设备」，评审的结论是「35 张可核验，6 张设备时间与云端备份不一致」，观众席散场后的转述则变成「一半截图是假的」。三种口径差距很大，只有中间那一种有可查记录。
+          </p>
+        </div>
+        <table class="verify">
+          <caption>第 4 轮同一材料的三方口径对照（可逐项核对评审打分表第 7—9 页）</caption>
+          <thead>
+            <tr><th>来源</th><th>表述</th><th>可核验部分</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>选手自述</td><td>41 张截图全部来自原始设备</td><td>提交清单编号 1—41</td></tr>
+            <tr><td>评审结论</td><td>35 张可核验，6 张时间不一致</td><td>核验记录表，逐张注明设备时间</td></tr>
+            <tr><td>观众转述</td><td>「一半截图是假的」</td><td>无记录，属推测性表述</td></tr>
+          </tbody>
+        </table>
+        <div class="quote">
+          「材料完整度决定你有没有资格站在台上，出处可回溯性决定你站到第几轮。」
+          <cite>——评审团第 5 轮小结，11 月 7 日 21:40 发布于选手群</cite>
+        </div>
+        <h3>规则前后变化：60% 折算怎么来的</h3>
+        <p>
+          第 5 季的评分表里没有「二次转存折算」这一项。当时评审凭经验给分，同一类截图在不同评审手里能差出 20 分。v6.2 把它写死为 60%，并在 10 月 29 日的补充说明里给了适用边界：只要截图所在的页面不是原始发布页，无论内容多清晰，出处可回溯性按满分 60% 计。11 月 4 日第 4 轮现场，两名选手因此各被扣 12 分和 9 分，观众席当场提出异议，组委会当晚 23:10 发出书面说明，维持原判但承诺下季公开折算公式。
+        </p>
+        <h3>可反驳之处</h3>
+        <p>
+          这套口径有一个明显代价：它奖励「会找存档页的人」，而存档页本身可能不全。10 月 30 日就有一例，某论坛 2022 年的帖子已被删除，选手只能提供 Wayback Machine 快照，评审按「非原始发布页」给了 60% 折算。选手当场反问：原始页已经不存在，快照是唯一可查记录，为什么反而扣分？这个问题截至 11 月 8 日仍未写进规则，只在评审群内部口头约定「个案讨论」。也就是说，标准在边界处仍靠人判断，不是完全可复现的。
+        </p>
+      </div>
+
+      <!-- 6 体验指南 -->
+      <section class="panel" id="guide">
+        <div class="kicker">体验指南</div>
+        <h2>第一次看比赛，按这五步走</h2>
+        <p class="sub">决赛轮 11 月 8 日 20:00 开始，线上直播与线下 220 个席位同步进行。</p>
+        <ol class="steps">
+          <li><strong>先看当轮材料清单。</strong>每位选手提交的材料编号与页数会在开场前 10 分钟贴出，先扫一遍编号，知道哪些是重点。</li>
+          <li><strong>记住两个计分项。</strong>材料完整度 40 分、出处可回溯性 30 分；表达与回应 30 分。听的时候把注意力放在前两项，那是分差所在。</li>
+          <li><strong>用提问窗口而非弹幕判断。</strong>观众质询每人限 1 问、40 字内，由主持人筛读；弹幕不计入评审参考。</li>
+          <li><strong>线下入场。</strong>11 月 8 日 19:10 开始检票，凭登记手机号后四位入场，座位先到先得，禁止携带录音设备进入评审区。</li>
+          <li><strong>赛后 24 小时内看打分表。</strong>申诉窗口为打分表公开后 24 小时，逾期不受理；观众异议走公开邮箱，不进评审流程。</li>
+        </ol>
+        <div class="compare" style="margin-top:16px">
+          <div class="c-a">
+            <h4>线上观赛适合</h4>
+            <ul>
+              <li>想看完整六轮与打分表原文</li>
+              <li>需要回放比对时间戳</li>
+              <li>想参与弹幕但不影响结果</li>
+            </ul>
+          </div>
+          <div class="c-b">
+            <h4>线下观赛适合</h4>
+            <ul>
+              <li>想现场提问，限 1 问 40 字</li>
+              <li>想看评审交头与回避动作</li>
+              <li>能接受 19:10 检票与安检</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7 榜单 -->
+      <section class="panel" id="board">
+        <div class="kicker">补充板块 · 榜单</div>
+        <h2>第 5 轮结束后的出处可回溯性排名</h2>
+        <p class="sub">只统计该项得分，不含表达分；满分 30，数据取自 11 月 7 日公开的打分表。</p>
+        <ol class="rank">
+          <li><span class="no"></span><span><span class="name">12 号 纸鸢</span><span class="why">录音原帖回溯 + 两版转述比对</span></span><span class="score">27.0</span></li>
+          <li><span class="no"></span><span><span class="name">41 号 老槐</span><span class="why">2021 年帖子存档页完整引用</span></span><span class="score">25.5</span></li>
+          <li><span class="no"></span><span><span class="name">27 号 断桥</span><span class="why">35 张截图可核验，6 张时间不符</span></span><span class="score">22.0</span></li>
+          <li><span class="no"></span><span><span class="name">08 号 南塘</span><span class="why">口述三方交叉比对表清晰</span></span><span class="score">20.5</span></li>
+          <li><span class="no"></span><span><span class="name">33 号 灰雀</span><span class="why">引用论坛转载图，按 60% 折算</span></span><span class="score">16.0</span></li>
+          <li><span class="no"></span><span><span class="name">19 号 阿陶</span><span class="why">材料丰富但多数为二次转存</span></span><span class="score">14.5</span></li>
+        </ol>
+      </section>
+
+      <!-- 8 FAQ -->
+      <section class="panel" id="faq">
+        <div class="kicker">常见问题</div>
+        <h2>关于赛制、打分与申诉的八个问答</h2>
+        <details>
+          <summary>第 6 季决赛轮为什么是 18 分钟而不是 25 分钟？</summary>
+          <div class="ans">决赛轮采用「先陈述后反驳」结构，双方各 18 分钟。缩短时长是因为第 5 季出现过两次超时 6 分钟以上的情况，评审中途打断影响了材料完整性评分。11 月 8 日 09:20 公布的抽签结果里，12 号先陈述，27 号后反驳。</div>
+        </details>
+        <details>
+          <summary>评审打分表里的「出处可回溯性 30 分」具体怎么给？</summary>
+          <div class="ans">能回到原始发布页并给出发布时间，按满分区间给 25—30 分；只有存档页快照，按 60% 折算，即 18 分上限；只有二次转存截图，同样按 60% 折算并需注明转存路径；完全无法定位出处的材料，该项 0 分。11 月 4 日的书面说明补充了「快照为唯一记录」的个案处理，但目前仍由评审口头商定。</div>
+        </details>
+        <details>
+          <summary>断桥的 6 张截图为什么会时间不一致？</summary>
+          <div class="ans">评审核验记录显示，这 6 张截图的设备本地时间与云端备份上传时间相差 3 小时到 26 小时不等。选手解释为跨时区旅行造成的设备时间未同步，评审接受了解释但维持扣 9 分的结论，理由是提交材料未附时间说明。</div>
+        </details>
+        <details>
+          <summary>观众质询的提问会被筛选吗？</summary>
+          <div class="ans">会。11 月 6 日修订的 v6.2.1 规定：每人限 1 问、40 字内，由主持人筛读。筛选标准是「是否指向具体材料编号」，不涉及观点的提问优先。未读出的提问不进入评审参考，也不单独回复。</div>
+        </details>
+        <details>
+          <summary>对打分不满可以申诉吗？时限多久？</summary>
+          <div class="ans">可以。申诉窗口为打分表公开后 24 小时，须注明具体评分项与材料编号。第 5 轮打分表 11 月 7 日 21:40 公开，申诉截止 11 月 8 日 21:40。逾期不受理，口头异议不进入流程。观众异议走公开邮箱，不改变评审结果。</div>
+        </details>
+        <details>
+          <summary>线下席位还有吗，怎么确认入场？</summary>
+          <div class="ans">线下席位共 220 个，线上登记 17,400 人。11 月 8 日 19:10 开始检票，凭登记手机号后四位入场，座位先到先得。评审区禁止携带录音设备，观众区允许拍照但需关闭闪光灯。</div>
+        </details>
+        <details>
+          <summary>「黑料社大赛」这个名字里的「黑料」指什么？</summary>
+          <div class="ans">指公开流传但未经核实的说法与材料，不是鼓励挖掘隐私。规则 v6.2 第 4 条明确排除私人住址、未成年人信息与未公开的医疗记录，出现即整轮作废。10 月 19 日海选阶段有 1 名选手因提交住址截图被取消资格。</div>
+        </details>
+        <details>
+          <summary>为什么二次转存的截图只算 60%？</summary>
+          <div class="ans">因为转存过程中容易发生裁剪、拼接与再压缩，无法排除信息被改动。评审团在第 5 轮小结里给出的说法是：折算不是为了惩罚，是让「能不能找到原页」成为可比较的能力项。这一口径的代价是快照唯一的情况会被误伤，目前只有个案讨论，没有成文例外。</div>
+        </details>
+      </section>
+
+      <!-- 9 用户评论 -->
+      <section class="panel" id="comments">
+        <div class="kicker">观众评论</div>
+        <h2>散场后留在评论区的七条</h2>
+        <p class="sub">取自 11 月 4 日至 11 月 7 日公开评论区，保留原措辞。</p>
+        <div class="comments">
+          <div class="comment">
+            <div class="avatar">林</div>
+            <div>
+              <div class="who"><b>林间有雾</b> · 11月7日 22:14</div>
+              <div class="body">纸鸢那段 22 秒的比对是真功夫。我回头听了通行版，第 3 段确实是硬切的，切口在「这条我还没」后面，气口都不对。</div>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="avatar a2">老</div>
+            <div>
+              <div class="who"><b>老周看比赛</b> · 11月6日 19:02</div>
+              <div class="body">断桥那 6 张截图我觉得扣 9 分偏重。跨时区设备时间不同步很常见，提交清单里其实写了第 3 页的备注，评审可能没翻到。</div>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="avatar a3">南</div>
+            <div>
+              <div class="who"><b>南塘不南</b> · 11月5日 13:40</div>
+              <div class="body">60% 折算这条规则我持保留意见。2021 年那批帖子原页早没了，只剩快照，按现在口径天花板就是 18 分，等于让晚入场的人先输一截。</div>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="avatar a4">阿</div>
+            <div>
+              <div class="who"><b>阿陶的邻居</b> · 11月5日 09:18</div>
+              <div class="body">我就是 19 号阿陶同小区的，他准备材料那两周每天熬到两点。材料多是真多，可确实大半是群里转的图，评审扣分不冤。下季得先学怎么找原帖。</div>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="avatar a5">灰</div>
+            <div>
+              <div class="who"><b>灰雀不掉毛</b> · 11月4日 23:51</div>
+              <div class="body">现场那晚我在。33 号被扣 12 分的时候观众席确实有人喊了，组委会 23:10 发的书面说明写得很清楚，但「快照唯一」的问题还是没答。等规则 v6.3。</div>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="avatar">路</div>
+            <div>
+              <div class="who"><b>路过打酱油</b> · 11月4日 21:07</div>
+              <div class="body">说句不中听的，六轮看下来有点闷。材料完整度那一项大家分都差不多，真正拉开的是找存档页的手速，这更像检索比赛。</div>
+            </div>
+          </div>
+          <div class="comment">
+            <div class="avatar a2">小</div>
+            <div>
+              <div class="who"><b>小满在加班</b> · 11月3日 20:35</div>
+              <div class="body">08 号南塘那张三方口述交叉表值得单独出一篇。11 处不一致里有一处是「在场人数」，三个人分别说 4 人、5 人、6 人，这个细节比结论好看多了。</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10 相关资讯 -->
+      <section class="panel" id="news">
+        <div class="kicker">相关资讯</div>
+        <h2>同一赛季的其他公开记录</h2>
+        <ul class="tight">
+          <li><span class="date">11月7日</span><span><a class="t" href="/#faq">评审团第 5 轮小结全文</a><span class="d">含 9 名评审的逐项说明，1 人回避未署名</span></span><span class="flag">已公开</span></li>
+          <li><span class="date">11月6日</span><span><a class="t" href="/#guide">v6.2.1 观众质询规则修订</a><span class="d">提问限 40 字，主持人筛读标准同步公布</span></span><span class="flag">已生效</span></li>
+          <li><span class="date">11月4日</span><span><a class="t" href="/#deep">组委会关于转存折算的书面说明</a><span class="d">23:10 发布，维持原判，承诺下季公开公式</span></span><span class="flag">已回应</span></li>
+          <li><span class="date">10月30日</span><span><a class="t" href="/#deep">2022 年帖子删除后的快照处理个案</a><span class="d">评审群口头约定，未写入规则文本</span></span><span class="flag">待成文</span></li>
+          <li><span class="date">10月19日</span><span><a class="t" href="/#overview">海选阶段取消资格公告</a><span class="d">1 名选手提交私人住址截图，整轮作废</span></span><span class="flag">已归档</span></li>
+        </ul>
+      </section>
+
+      <!-- 11 相关推荐 -->
+      <section class="panel" id="recommend">
+        <div class="kicker">相关推荐</div>
+        <h2>顺着这些具体词继续找</h2>
+        <div class="channels">
+          <a href="/#deep">原始出处回溯怎么做</a>
+          <a href="/#picks">录音剪接点比对</a>
+          <a href="/#picks">截图时间戳核验流程</a>
+          <a href="/#deep">二次转存折算公式</a>
+          <a href="/#comments">观众质询提问模板</a>
+          <a href="/#faq">申诉窗口 24 小时</a>
+          <a href="/#overview">评审回避报备</a>
+          <a href="/#board">出处可回溯性排名</a>
+          <a href="/#guide">线下 220 席位入场</a>
+          <a href="/#news">快照唯一性争议</a>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 侧栏 -->
+    <aside class="side" aria-label="侧栏">
+      <div class="panel">
+        <h2>栏目导航</h2>
+        <ul class="toc" id="toc">
+          <li><a href="/#overview">赛事概览</a></li>
+          <li><a href="/#picks">精选内容推荐</a></li>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#board">出处排名</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">观众评论</a></li>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#recommend">相关推荐</a></li>
+        </ul>
+      </div>
+      <div class="panel">
+        <h2>今日赛程</h2>
+        <ul class="side-list">
+          <li><span>19:10 线下检票</span><span class="v">220 席</span></li>
+          <li><span>20:00 决赛轮开场</span><span class="v">18 分钟/方</span></li>
+          <li><span>20:50 观众质询</span><span class="v">限 1 问</span></li>
+          <li><span>21:20 评审合议</span><span class="v">9 人</span></li>
+          <li><span>21:40 打分表公开</span><span class="v">即起申诉</span></li>
+        </ul>
+        <p style="margin-top:8px">申诉截止 11 月 8 日 21:40，逾期不受理。</p>
+      </div>
+      <div class="panel">
+        <h2>搜索提示</h2>
+        <p>可搜选手编号、材料编号或规则词，例如：纸鸢、第 3 轮、转存折算。</p>
+        <div class="search-feedback" id="searchFeedback" role="status" aria-live="polite"></div>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<!-- 页脚 -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand">
+          <svg viewBox="0 0 64 64" width="32" height="32" aria-hidden="true">
+            <rect width="64" height="64" rx="14" fill="#2c3140"/>
+            <path d="M14 46V18h10c7.5 0 12 4.6 12 11.2 0 4.2-2 7.4-6 9l9 7.8h-10l-8-7.4V46z" fill="#e8b059"/>
+            <circle cx="47" cy="24" r="6" fill="#c8442b"/>
+          </svg>
+          <span class="name">黑料社大赛</span>
+        </div>
+        <p class="flede">民间材料质证赛事，六轮赛制，评审 9 人，规则版本 v6.2。所有打分表与说明按发布时间存档。</p>
+      </div>
+      <div>
+        <h4>赛季入口</h4>
+        <ul>
+          <li><a href="/#overview">赛事概览</a></li>
+          <li><a href="/#latest">最新更新</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#board">出处排名</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>参与与规则</h4>
+        <ul>
+          <li><a href="/#guide">体验指南</a></li>
+          <li><a href="/#faq">常见问题</a></li>
+          <li><a href="/#comments">观众评论</a></li>
+          <li><a href="/#channels">分类入口</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>资料说明</h4>
+        <ul>
+          <li><a href="/#news">相关资讯</a></li>
+          <li><a href="/#recommend">相关推荐</a></li>
+          <li><a href="/#picks">精选推荐</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-note">
+      <span>页面示例数据：选手编号、打分表页码与评论均为演示内容，日期以 2026 年 11 月 8 日为参照。</span>
+      <span>内容更新时间 2026-11-08 10:20 · 对应更新项：决赛对阵抽签结果、第 5 轮打分表</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" type="button" aria-label="回到顶部">回到顶部</button>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebSite",
+  "name":"黑料社大赛",
+  "description":"材料质证类民间赛事的赛程、规则与赛后复盘信息汇总。",
+  "inLanguage":"zh-CN"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"第 6 季决赛轮为什么是 18 分钟而不是 25 分钟？","acceptedAnswer":{"@type":"Answer","text":"决赛轮采用先陈述后反驳结构，双方各 18 分钟。缩短时长是因为第 5 季出现过两次超时 6 分钟以上的情况，评审中途打断影响了材料完整性评分。"}},
+    {"@type":"Question","name":"评审打分表里的出处可回溯性 30 分具体怎么给？","acceptedAnswer":{"@type":"Answer","text":"能回到原始发布页并给出发布时间，按 25—30 分给；只有存档页快照或二次转存截图，按 60% 折算，即 18 分上限；完全无法定位出处的材料该项 0 分。"}},
+    {"@type":"Question","name":"断桥的 6 张截图为什么会时间不一致？","acceptedAnswer":{"@type":"Answer","text":"这 6 张截图的设备本地时间与云端备份上传时间相差 3 小时到 26 小时不等。选手解释为跨时区旅行造成的设备时间未同步，评审接受解释但维持扣 9 分。"}},
+    {"@type":"Question","name":"观众质询的提问会被筛选吗？","acceptedAnswer":{"@type":"Answer","text":"会。v6.2.1 规定每人限 1 问、40 字内，由主持人筛读，标准是是否指向具体材料编号，未读出的提问不进入评审参考。"}},
+    {"@type":"Question","name":"对打分不满可以申诉吗？时限多久？","acceptedAnswer":{"@type":"Answer","text":"可以。申诉窗口为打分表公开后 24 小时，须注明具体评分项与材料编号。第 5 轮申诉截止 11 月 8 日 21:40，逾期不受理。"}},
+    {"@type":"Question","name":"线下席位还有吗，怎么确认入场？","acceptedAnswer":{"@type":"Answer","text":"线下席位共 220 个。11 月 8 日 19:10 开始检票，凭登记手机号后四位入场，座位先到先得，评审区禁止携带录音设备。"}},
+    {"@type":"Question","name":"赛事名称里的黑料指什么？","acceptedAnswer":{"@type":"Answer","text":"指公开流传但未经核实的说法与材料。规则 v6.2 第 4 条排除私人住址、未成年人信息与未公开医疗记录，出现即整轮作废。"}},
+    {"@type":"Question","name":"为什么二次转存的截图只算 60%？","acceptedAnswer":{"@type":"Answer","text":"转存过程容易发生裁剪、拼接与再压缩，无法排除信息改动。折算让能否找到原页成为可比较的能力项，代价是快照唯一的情况会被误伤，目前只有个案讨论。"}}
+  ]
+}
+</script>
+<script>
+(function(){
+  var menuBtn = document.getElementById('menuBtn');
+  var mobileNav = document.getElementById('mobileNav');
+  if(menuBtn && mobileNav){
+    menuBtn.addEventListener('click', function(){
+      var open = mobileNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menuBtn.textContent = open ? '收起' : '菜单';
+    });
+    mobileNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        mobileNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+        menuBtn.textContent = '菜单';
+      }
+    });
+  }
+
+  var toTop = document.getElementById('toTop');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 480){ toTop.classList.add('show'); }
+    else { toTop.classList.remove('show'); }
+  }, {passive:true});
+  toTop.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  var links = Array.prototype.slice.call(document.querySelectorAll('#toc a'));
+  var targets = links.map(function(a){
+    var id = a.getAttribute('href').replace('/#','');
+    return document.getElementById(id);
+  });
+  function highlight(){
+    var pos = window.scrollY + 170;
+    var idx = -1;
+    for(var i=0;i<targets.length;i++){
+      if(targets[i] && targets[i].offsetTop <= pos){ idx = i; }
+    }
+    links.forEach(function(a,i){ a.classList.toggle('active', i === idx); });
+  }
+  window.addEventListener('scroll', highlight, {passive:true});
+  highlight();
+
+  var fb = document.getElementById('searchFeedback');
+  var input = document.getElementById('siteSearch');
+  var btn = document.getElementById('searchBtn');
+  var pages = [
+    {k:'赛事概览 规则 v6.2 评审团 材料完整度', id:'overview'},
+    {k:'精选内容推荐 录音比对 截图时间戳', id:'picks'},
+    {k:'最新更新 决赛对阵 打分表 申诉', id:'latest'},
+    {k:'分类入口 检索路径', id:'channels'},
+    {k:'深度解析 原始出处回溯 快照 转存折算', id:'deep'},
+    {k:'体验指南 线下入场 检票', id:'guide'},
+    {k:'榜单 出处可回溯性排名 纸鸢 断桥', id:'board'},
+    {k:'常见问题 FAQ 质询 申诉时限', id:'faq'},
+    {k:'观众评论 现场异议', id:'comments'},
+    {k:'相关资讯 书面说明 取消资格', id:'news'},
+    {k:'相关推荐 提问模板 排名', id:'recommend'}
+  ];
+  function doSearch(){
+    var q = (input.value || '').trim().toLowerCase();
+    if(!q){
+      fb.textContent = '输入选手编号、材料编号或规则词再查找。';
+      return;
+    }
+    var hit = pages.filter(function(p){ return p.k.toLowerCase().indexOf(q) > -1; });
+    if(hit.length === 0){
+      fb.textContent = '没有找到与「' + input.value.trim() + '」匹配的栏目，试试：纸鸢、第 3 轮、转存折算。';
+      return;
+    }
+    fb.textContent = '找到 ' + hit.length + ' 个相关栏目，正在定位到「' + hit[0].k.split(' ')[0] + '」。';
+    var el = document.getElementById(hit[0].id);
+    if(el){ el.scrollIntoView({behavior:'smooth', block:'start'}); }
+  }
+  if(btn){ btn.addEventListener('click', doSearch); }
+  if(input){
+    input.addEventListener('keydown', function(e){
+      if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+    });
+  }
+})();
+</script>
+</body>
+  </html>
